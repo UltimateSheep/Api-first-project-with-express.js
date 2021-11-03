@@ -1,0 +1,28 @@
+div .MainPage {
+    text-align: center;
+    background-color: slategrey;
+}
+
+h1 .MainPage {
+    text-align: center;
+    color: cornsilk;
+}
+
+p .MainPage {
+    text-align: center;
+    color: cornsilk;
+}
+
+body {
+    background-color: grey;
+}
+
+.ErrorPage {
+    text-align: center;
+    color: red;
+}
+
+.ErrorPage {
+    text-align: center;
+    color: red;
+}

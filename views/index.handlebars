@@ -1,0 +1,71 @@
+<div class="">
+  <h1 class="primary text-center">
+    Hello World!
+  </h1>
+  <form action="/api" method="post" class="mb-4">
+    <div class="form-group mb-4">
+      <label for="Name-input">
+        Name:
+      </label>
+      <input
+        type="text"
+        name="Name"
+        id="Name-input"
+        class="form-control"
+        placeholder=""
+        aria-describedby="helpId"
+      />
+      <small id="helpId" class="text-muted">
+        Enter your name here
+      </small>
+    </div>
+    <div class="mb-3">
+      <label for="Location-input" class="form-label">
+        Location:
+      </label>
+      <select class="form-control" name="Location" id="Location-input">
+        {{#each CountryArray}}
+          <option>
+            {{this.country}}
+          </option>
+        {{/each}}
+      </select>
+      <small id="helpId" class="text-muted">
+        Enter your location here
+      </small>
+    </div>
+    <button type="submit" class="btn btn-success">
+      Submit
+    </button>
+  </form>
+  <h4 class="fs-30">
+    Members rn
+  </h4>
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            Firstname
+          </th>
+          <th>
+            Country
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each Members}}
+          <tr>
+            <td>
+              {{this.Name}}
+            </td>
+            <td>
+              {{this.Location}}
+            </td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+  {{! <input class="form-range wi" type="range" value="1" step="3"></input> }}
+</div>
